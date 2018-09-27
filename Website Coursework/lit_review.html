@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> WebF1 Lit Review </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id = "blueBackground">
+
+	<nav>
+		<ul>
+			<li class = "navItem"> <a class = "navLink" href = "index.html">Home</a>
+			<li class = "navItem"> <a class = "navLink" href = "lit_review.html">Literature Review</a>
+			<li class = "navItem"> <a class = "navLink" href = "log.html"> Discovery Log</a>
+			<li class = "navItem"> <a class = "navLink" href = "gallery.html">Gallery</a>
+		</ul>
+	</nav>
+
+<h1>Mitigating Corporate information exposure on the web </h1>
+
+<article>
+
+<p>Mitigating corporate information exposure on the web can be split into three
+	key fields; risk detection, risk management and development of working solutions.
+	Each of these factors provides a useful insight into prevention of corporate security
+	breaches, both from the company’s perspective and the user’s perspective.
+
+<p>Perhaps the most important step in mitigating corporate information exposure is
+	the detection of any security flaws existing within a company’s system. A lack of
+	standardized methods for risk assessment causes security measures to vary between
+	companies and between practitioners. As a result different risk assessment models
+	have been produced. Information Security Risk Assessment based its conceptual design
+	on the analysis of generic methodologies, including CRAMM, CORAS and OCTAVE, by
+	comparing the common features of each; as well as continually researching into different
+	models to further develop its design. (Shamala, 2013, p45-52).
+
+<p>Whereas more specific models propose that security controls should be selected
+	based on real risks to an organization's assets and operations (Joshi, 2017).
+	This study was aimed at reducing the risk of security breach in a University
+	system by identifying weak points, prioritizing exploitations and improving
+	security as an ongoing process in this shifting environment. However, even in
+	this specific study, use of a standardized approach was maintained through a
+	Common Vulnerability Scoring System which merged severity, maturity and frequency
+	of a potential exploit to produce a quantitative risk level (Keramati, 2016).
+	Furthermore, the National Vulnerability Database was used in this case to provide
+	the references for advisories, solutions, and tools for the model. As well as showing
+	flaws and exploits of a system recorded against risk and updated in real time (NVD, 2000).
+
+<p>Successful management of security problems is another way to mitigate information
+	exposure on the web. This approach covers appropriate strategies for action once a
+	risk is detected and the testing that flaws have been fully resolved in a proposed
+	solution. Similar to risk identification, risk management systems can follow an
+	Information Structure Risk Management model, creating evidence-based decisions
+	for security practitioners by integrating the quality of information assessment (Shamala, 2017).
+	In this case, testing is used both to identify flaws and to test for possible solutions. P
+	enetration testing, described as the type of testing whereby testers attempt to
+	circumvent the security features of a system in an effort to identify security weaknesses,
+	(Russell, 1993) detects any unauthorised network access through simulation of tactics used
+	 by hackers, by the testers. An advantage of using penetration testing is the specific
+	 feedback reported to the company rather than more generic recommendation (Penetration Testing, 2017),
+	 which can be used to scale vulnerability of a system to specific risks and budget for an individual company.
+
+<p>However, management of problems is only useful once a specific problem has been
+	identified, with standardardized action here of less importance than during risk
+	identification. A potential risk of buffer overruns, for example, could be identified
+	through destructively testing inputs of Web Software, but resulting actions change
+	depending on the severity of the security breach. Buffer Overruns can lead to information
+	DoS, loss of data, or data corruption through overflowing a buffer with malicious code,
+	if a user has knowledge of precise memory addresses of out of buffer instructions (Ash, 2003).
+	Solutions include limiting the size of data inputs, ensuring code with administrator privileges
+	is not being run and regularly changing the SQL database password/renaming the administrator
+	account. Likewise, access to restricted directories by embedding URL’s in a parser
+	should be prevented through proper practice, following the standard of documenting
+	what information is passed as it relates to the feature; this allows for a solution
+	to be equally effective independently of the severity of URL canonicalization.
+	A common example of under management of security problems is preventing references
+	to parsers with full stops (Ash, 2003) - which is not the only way to reference outside the parser’s domain.
+
+<p>Development of working solutions to prevent information exposure has evolved
+	rapidly over the last decade. It is important that these solutions keep up with
+	the complexity of security attacks to mitigate information exposure, but the main
+	focus should remain on detecting these adapting attacks. Use of encryption - basic
+	technology enabling secure messaging (O’Neill, 2003) - has widely improved from symmetric
+	encryption to more complex asymmetric encryption techniques, such as the RSA algorithm,
+	because of the decreasing time required for a computer to process a brute-force attack.
+	Symmetric encryption shares a private key between receiver and sender, initially of a
+	Data Encryption Standard 64 bits, but later enhanced to block and key lengths  of 128,
+	192 or 256 bits under the Advanced Encryption Standard (Proll, 2006, p256-258).
+	Whereas asymmetric encryption uses different keys, a public key for encrypting and
+	a private key for decrypting. Although theoretically more secure, asymmetric encryption
+	requires reliable distribution of public keys under web application scenarios. To combat
+	this, Registration Authorities have been established to provide certificates for distributors.
+	Each certificate has a validity period, with untrustworthy certificates not being renewed,
+	instead being held in Certificate Revocation Lists (Proll, 2006, p 260). Authentication of a
+	user’s information over a communication medium has been further secured through use of digital
+	signatures. These are unique hashes created from a user’s input data, therefore any change to the
+	data will result in completely changing the hash - allowing for malicious alteration of data to be traced.
+
+<p id = "last">In order to successfully mitigate corporate information exposure on
+	the web it is crucial to investigate all aspects of a company’s information security.
+	This includes use of models and simulations to highlight and combat potential risks,
+	high-level testing of implemented solutions (to identified flaws or in an event of a
+	security breach), and constant updating of risk-management protocols for staff and
+	system on the company side. As well this, securing held information, input transmission
+	and providing system access levels on the user-side prevents external exploitation of a
+	company’s system. Out of these factors, arguably the most important for mitigating
+	information exposure on the web are the methods used for identifying any real-time
+	risks to a company’s information.
+
+</article>
+
+<h2>Reference List</h2>
+
+
+<ol>
+	<li>Ash, L. (2003).<em> The web testing companion: the insider’s guide to efficient and effective tests.</em>
+		Indianapolis (Indiana): Wiley.
+
+	<li>Joshi, C., & Singh, U. K. (2017). Information security risks management framework –
+		A step towards mitigating security risks in university network.
+		<em>Journal Of Information Security And Applications</em>, 35128-137. doi:10.1016/j.jisa.2017.06.006
+
+	<li>Keramati, M., Akbari, A.,(2016). CVSS-based security metrics for quantitative analysis of attack graphs.
+		<em>World Congress on Engineering and Computer Science</em>, 1. doi:10.1109/iccke.2013.6682816
+
+  <li>NVD - <em>Home</em>, US-CERT, 2000, Retrieved from <a href = "https://nvd.nist.gov">https://nvd.nist.gov/</a>
+
+  <li>O’Neill, M., <em>Web Services Security</em>, 1st Edition, McGraw-Hill/Osborne, 2003.
+
+  <li>Penetration Testing. (n.d.). Retrieved from
+		<a href = "https://www.itgovernance.co.uk/penetration-testing">https://www.itgovernance.co.uk/penetration-testing</a>
+
+  <li>Proll, B. (2006). <em>Web engineering the discipline of systematic development of web applications</em>
+		(G. Kappel, Ed.). Hoboken, NJ: John Wiley & Sons
+
+  <li>Russell, D., & Gangemi, G. T. (1993). <em>Computer security basics.</em> Sebastopol, CA: OReilly & Associates.
+
+  <li>Shamala, P., Ahmad, R., Zolait, A., & Sedek, M. (2017). Integrating information quality dimensions into information
+		security risk management (ISRM). <em>Journal of Information Security and Applications</em>, 36, 1-10. doi:10.1016/j.jisa.2017.07.004
+
+  <li>Shamala, P., Ahmad, R., & Yusoff, M. (2013). A conceptual framework of info structure for
+		information security risk assessment (ISRA). <em>Journal of Information Security and Applications</em>,
+		18(1), 45-52. doi:10.1016/j.jisa.2013.07.002
+
+</ol>
+
+<ul class = "validator">
+	<li><a class = "backgroundLink" href = "http://validator.w3.org/check?uri=referer" target = "blank">HTML validator</a>
+	<li><a class = "backgroundLink" href = "http://jigsaw.w3.org/css-validator/check/referer" target = "blank">CSS validator</a>
+</ul>
+
+<footer>
+	Student ID: UP855834
+	<picture>
+		<source type = "image/jpg" srcset = "images/uopLogo.jpg"/>
+		<source type = "image/png" srcset = "images/uopLogo.png"/>
+	  <img id = "logo" title = "UOP Logo" src="images/uopLogo.gif" alt= "Uni logo">
+	</picture>
+</footer>
+
+</body>

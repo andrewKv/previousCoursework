@@ -1,0 +1,24 @@
+article{
+  color: #252525;
+  text-align:justify;
+  border-style: solid;
+  padding: 1em;
+  background-color: white;
+  margin: 5vw;
+  border-radius: 5px;
+  min-height: 90vh;
+}
+body{
+  background-color: #56738a;
+}
+
+img{
+  position: relative;
+  border: solid;
+  left: 5vw;
+  top: 5vh;
+  width: 60vw;
+	max-width: 450px;
+	height:auto;
+  margin-right: 7em;
+}

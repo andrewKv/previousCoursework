@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> WebF1 Discovery Log</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id = "blueBackground">
+	<nav>
+		<ul>
+			<li class = "navItem"> <a class = "navLink" href = "index.html">Home</a>
+			<li class = "navItem"> <a class = "navLink" href = "lit_review.html">Literature Review</a>
+			<li class = "navItem"> <a class = "navLink" href = "log.html"> Discovery Log</a>
+			<li class = "navItem"> <a class = "navLink" href = "gallery.html">Gallery</a>
+		</ul>
+	</nav>
+<h1 id = "top">Discovery Log</h1>
+
+<h2>Contents</h2>
+<ul id = "dLogNav">
+		<li><a class = "backgroundLink" href = "#htmlToCss">Linking HTML to CSS</a>
+		<li><a class = "backgroundLink" href = "#images">Using Images</a>
+		<li><a class = "backgroundLink" href = "#research">Research, Accessibility and Validation</a>
+		<li><a class = "backgroundLink" href = "#links">Links and Colours</a>
+</ul>
+<article id = "log">
+
+<h3>Setting up an individual Virtual Machine</h3>
+
+<p>To begin with the virtual machine was provided by google with each student
+	given an individual account from the university email system. Beforehand I had
+	only used window OS virtual machines so when LINUX opened I initially thought
+	it had crashed when the input password cursor wasn’t blinking. However once this
+	was resolved setting up the virtual machine was a simple case of following given instructions.
+
+<h3>Receiving initial coursework</h3>
+<p>Initially I created a separate google drive folder for the coursework, as well
+as for the Web fundamentals unit. This was because my previous course directories
+ were local to my laptop - streamlining accessibility. I then formatted the document
+ and started initial research - this research covered the use of books within the library
+ then, after I decided to more specifically focous on reading academic articles, the use of
+ discovery to filter previous research into the topic.
+Initial search terms began with;
+
+<p class = "tabbed">Information exposure on the web
+<p>This was too broad, so including terms;
+	<ul>
+		<li>Corporate
+		<li>Mitigating
+	</ul>
+
+<p>allowed for academic articles to be found using discovery,
+	in turn this linked to further academic research e.g. the theory behind the risk modelling paper.
+
+
+<h3>Choosing an editor</h3>
+<p>Suggested text editors were based on the capability of the software.
+	These included editors such as Atom, Brackets, Notepad++, Sublime Text, WebStorm.
+	 I started here by downloading the Atom text editor, although I could not yet
+	 comprehensively test it until we began web development. Once started, I stuck
+	  with atom for its ease of use, either through auto-completing or showing all
+		files available in the directory.
+
+
+<h3>Practicing academic writing</h3>
+<p>To practice writing I was given the task of going back over a piece of prior work
+	in order to change the words and sentence structure to fit in with writing used within
+	the practical document.
+<h4>Before:</h4>
+<p>The first PDP’s (Programmed Data Processor) were marketed from 1957 - 1969;
+	with many still in use in the late 70’s1. During this time of development,
+	DEC (the Digital Equipment Corporation) would focus design of the PDP away from
+	 large, complicated, and expensive computers that were typical of the time and
+	 towards smaller, cheaper, minicomputers which appealed to a market unable to
+	 afford these larger computers. As a result, these machines were marketed separately
+	  from computers, selling for approximately 1/10 of the cheapest computer alternative.
+<h4>After:</h4>
+<p>The first Programmed Data Processors were marketed from 1957 - 1969; with multiple devices
+	remaining in use during late 70’s1. During this time of development, the
+	Digital Equipment Corporation would focus design of the PDP away from
+	complicated and expensive computers that were typical of the time towards cheaper,
+	compact, ‘mini computers’ which appealed to a market of reduced budget. As
+	a result these machines were marketed independently from market computers,
+	selling for approximately 1/10 of the cheapest computer alternative.
+
+<h3 id = "htmlToCss">Linking CSS</h3>
+<p>This can be done in the same file, or more effectively as a separate file enclosed
+in style tags. A separate file does not need html style tags as it is a CSS file,
+it is linked to the HTML by link rel="stylesheet" title="My Style" href="mystyle.css".
+Class selectors use .notation to link classes from a CSS file to a HTML file,
+whereas id selectors select different elements of a CSS file by their id. I used this
+knowledge when validating my website to fix a case of duplicate ID's, as an ID should be unique
+to an element on a particulart page, when styling list items I switched to using class
+notation.
+
+
+<h3 id = "images">Using images</h3>
+<p>The image tag can be used to specify a file, height, width and style of an image.
+	 It is necessary to include an alt option in the tag - which is displayed if the
+	 designated image file cannot be loaded. Captions can also be used to border an
+	 image using the figure element.
+<p>
+	<figure>
+	 <picture>
+		 <source type = "image/png" srcset = "images/pictureDemoImg.png"/>
+		 <source type = "image/jpg" srcset = "images/pictureDemoImg.jpg"/>
+	 	 <img src = "images/pictureDemoImg.gif" title = "Picture element" alt = "HTML picture example" />
+	 </picture>
+	 <figcaption>Setting multiple sources and captions</figcaption>
+	</figure>
+
+<p>Picture elements can be used to provide a context for the browser about the image
+	shown, img is still used as the point of reference where a style can be applied.
+	In effect, this allows the browser to select different images and scale image sizes
+	based on properties within a browser.
+
+<p>Multiple source srcset tags can be used to display different images in order
+	of precedence to suit browser compatibility - img tags will always be the last source to be
+	defined. Image source can also be changed, not just changing the image quality.
+
+
+<p>SVG tags (Scalable Vector Graphics) can be used for simple images and graphs.
+	The tags mark out coordinate drawing elements as well as including text, links and
+	transformation attributes. This may be useful for me as an alternative to using multiple reolsutions
+	of the same image, i.e. if I wanted to include the University logo in different positions/ sizes on
+	my website.
+
+
+<h3>Using Video</h3>
+<p>The video element can be used to displays videos with reference to alternative format support
+	 the same way as the picture elements.
+
+
+<h3 id = "research">Researching into useful HTML tags</h3>
+
+<p>I found many different tags for displaying text, all with slightly different applications;
+	these included: main, article, span, section, nav and footer tags. Furthermore, using margin and index styles
+	in CSS is a more useful alternative than using a procedural format to set out these text elements
+	and could adapt to screen size with units like viewport width(vw) and viewport height(vh).
+
+<p>I also found a button tag, which fully implements a button object, this could save a lot of time, so
+	I considered using buttons for in-page navigation for the discovery log and for a drop-down
+	navigation for future pages that would not fit on the main navigation bar. After testing, I found it easier
+	to create my own button element, this could be applied to links for navigation and validate
+	successfully.
+
+<h3>Accessibility considerations </h3>
+
+<p> Upon researching of the button tag's applications, I found that the blue outline on
+	 activation was important for disabled users to tab through buttons with a keyboard and see what
+	 button they were up to. As a result I set this outline to none when active, but kept it to default
+	 blue when a user tabbed through the page
+
+<h3> Validation Concerns </h3>
+<p> After using the w3 validator on my homepage I discovered that my nav bar had duplicate
+	id selectors, to fix this I ended researching into class selector - to be applied to each
+	list item. This resulted in the colour being overridden by the general anchor colour, to fix this
+	I used the !important command in CSS to prevent the browser from ovveriding an element with a
+	generic style.
+
+<h3>Researching into CSS grid design and layout options in HTML</h3>
+
+<p>A grid layout allows definitive layouts for the user that fixes design and section positions.
+	This reduces the issue of a reduction of screen size causing unpredictability within the webpage elements
+
+<p>Layout can also be different, depending on source, e.g. portrait or landscape orientation
+<a href = "https://drafts.csswg.org/css-grid/#track-sizing">https://drafts.csswg.org/css-grid/#track-sizing</a>
+
+<p>A grid can be set by setting the display to grid in CSS.
+	The grid class contains arguments for in-line grid, grid column gap, grid row gap and grid - gap
+
+<h3 id = "links">Researching into links and colours</h3>
+<p>Linking to different web pages was fundamental for creating the website, this was
+	achieved using a href element referencing the destination file.
+<p>I used the HTML colour picker tool on the w3c site to determine exact
+	hexadecimal values for the colours of my website. I then decided to set an
+	image as a background for my homepage. This was done through CSS, I looked
+	into setting the image in the centre of the page and scaling the image so
+	it was visible on all screen sizes without duplicating the image. For images,
+	a coordinate system can be used to place images in specific places.
+
+
+<h3>Website design and usability</h3>
+<p>To draw out a basic website design it was suggested to use FrameBox: <a href = "http://framebox.org/">http://framebox.org/</a>
+		<figure>
+			<picture>
+				<source type = "image/png" srcset = "images/pageDesignDemo.png"/>
+				<source type = "image/jpg" srcset = "images/pageDesignDemo.jpg"/>
+				<img src = "images/pageDesignDemo.gif" title = "Page Layout" alt = "HTML picture example"/>
+			</picture>
+			<figcaption> Designing a page layout </figcaption>
+		</figure>
+
+<p>This will help me to plan page designs and interconnections between these pages,
+	instead of diving straight into adding html.
+
+<p>Usability was also a factor, in terms of screen size, resolution and screen
+	orientation being programmed for by using media queries. Another idea this gave
+	me was further extendability, e.g. dropdown menus, having the main website as a simplistic design.
+	I used media queries to determine the device using the height of the device instead of the width,
+	so the different version of the page would load depending on the type of the device. This allowed a changing
+	width to affect each device smoothly.
+
+	<ul class = "validator">
+		<li><a href = "http://validator.w3.org/check?uri=referer" target = "blank">HTML validator</a>
+		<li><a href = "http://jigsaw.w3.org/css-validator/check/referer" target = "blank">CSS validator</a>
+	</ul>
+
+<p  id = "last">
+	<a href = "#top" class = "button" >To top</a>
+
+</article>
+
+<footer>
+	Student ID: UP855834
+	<picture>
+		<source type = "image/jpg" srcset = "images/uopLogo.jpg"/>
+		<source type = "image/png" srcset = "images/uopLogo.png"/>
+	  <img id = "logo" title = "UOP Logo"src="images/uopLogo.gif" alt= "Uni logo">
+	</picture>
+</footer>
+</body>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> WebF1 Gallery</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id = "blueBackground">
+	<nav>
+		<ul>
+			<li class = "navItem"> <a class = "navLink" href = "index.html">Home</a>
+			<li class = "navItem"> <a class = "navLink" href = "lit_review.html">Literature Review</a>
+			<li class = "navItem"> <a class = "navLink" href = "log.html"> Discovery Log</a>
+			<li class = "navItem"> <a class = "navLink" href = "gallery.html">Gallery</a>
+		</ul>
+	</nav>
+
+<h1>Gallery</h1>
+
+<h2 class="tabbed"> A fancy image change</h2>
+<picture>
+	 	<source media="(min-width: 600px)" srcset="images/imageOne.png">
+		<source media="(min-width: 400px)" srcset="images/imageTwo.png">
+	 	<img id = "centreImg" src = "images/imageThree.png" alt = "HTML picture example" />
+</picture>
+
+
+
+<h2 class = "tabbed"> A lovely video clip </h2>
+
+<video autoplay controls muted>
+	<source src="images/catVideo.mp4" type="video/mp4">
+  <source src="images/catVideo.webm" type="video/webm">
+	<track src="subtitlesCat.vtt" kind="subtitles" srclang="en" label = "English">
+This browser won't load the video :(
+</video>
+<ul class = "validator">
+	<li><a class = "backgroundLink" href = "http://validator.w3.org/check?uri=referer" target = "blank">HTML validator</a>
+	<li><a class = "backgroundLink" href = "http://jigsaw.w3.org/css-validator/check/referer" target = "blank">CSS validator</a>
+</ul>
+<footer>
+	Student ID: UP855834
+	<picture>
+		<source type = "image/jpg" srcset = "images/uopLogo.jpg"/>
+		<source type = "image/png" srcset = "images/uopLogo.png"/>
+		<img id = "logo" title = "UOP Logo" src="images/uopLogo.gif" alt= "Uni logo">
+	</picture>
+</footer>
+
+
+</body>
